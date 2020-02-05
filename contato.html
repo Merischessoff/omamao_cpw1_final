@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OMAMÃO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="shortcut icon" type="image/x-png" href="favicon-32x32.png">
+<link rel="stylesheet" href="css/arquivo.css">
+<script src="js/javascript.js"></script>
+<style>
+
+</style>
+</head>	
+<body class="w3-light-grey">
+	
+	
+
+<div class="formulario">
+    <h2 class="margem">Envie sua mensagem</h2>
+      <form name="myForm" z
+        onsubmit="return validateForm()" method="post">
+          Nome:<input type="text" id="fname" name="firstname" placeholder="Seu nome.."
+		   onfocus="if(this.value == '') {this.value = '';this.style.color='#FF0000'}"
+		   onblur="if(this.value == '') {this.value = '';this.style.color='#000000'}" >
+
+    <label for="lname">Segundo Nome:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Seu segundo nome.."
+		   onfocus="if(this.value == '') {this.value = '';this.style.color='#FF0000'}"
+		   onblur="if(this.value == '') {this.value = '';this.style.color='#000000'}" 
+ >
+
+    <label for="country">País:</label>
+    <select id="country" name="country">
+      <option value="brasil">Brasil</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Mensagem:</label>
+    <textarea id="subject" name="subject" placeholder="Escreva aqui as suas dúvidas ou sujestões.." style="height:200px"
+			onfocus="if(this.value == '') {this.value = '';this.style.color='#FF0000'}"
+		   	onblur="if(this.value == '') {this.value = '';this.style.color='#000000'}" 
+			  ></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div> <br>
+	
+	
+	
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html"><img src="favicon-32x32.png" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" ></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="noticias.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Notícias</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Contato</a>
+    <a href="aplicativo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Aplicativo</a>
+    <a href="dicas.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dicas</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Notícias</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contatos</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Aplicativo</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Dicas</a>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Alimente-se bem todos os dias e viva melhor</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Produzido por <a target="_blank">OMAMÃO</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OMAMÃO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-png" href="favicon-32x32.png">
+<link rel="stylesheet" href="css/arquivo.css">
+<script src="js/javascript.js"></script>
+   <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+</head> 
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html"><img src="favicon-32x32.png" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" ></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="noticias.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Notícias</a>
+    <a href="contato.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contato</a>
+    <a href="aplicativo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Aplicativo</a>
+    <a href="dicas.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Dicas</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Notícias</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contatos</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Aplicativo</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Dicas</a>
+  </div>
+</div>
+
+<!-- Header -->
+<!--  
+<header class="w3-container w3-red w3-center" style="padding:100px 5px">
+  <h1 class="w3-margin w3-jumbo"><img src="omamao.png" alt="logo da iniciativa"></h1>
+  <p class="w3-xlarge"></p>
+  <a href="http://ibd.com.br/pt/Default.aspx" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Certificado</a>
+-->
+  
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">  
+    
+    <div class="w3-twothird">
+      <h1>Consuma frutas da época</h1>
+      <h5 class="w3-padding-32">Consumindo frutas da época(de acordo com a sua região) você terá uma grande economia nas suas compras. 
+        As frutas possuem melhor qualidade, pois são produzidas e transportadas em localidades próximas. <br>
+        Há também uma forte relação entre vitaminas e minerais contidos nas frutas com a época em que maduram, 
+        geralmente coincidem com as nossas necessidades alimentares.<br>Veja a melhor época de cada fruta e verdura nas tabelas abaixo:
+    
+      <a float=right hover href="https://www.ufrgs.br/napead/repositorio/objetos/edital19/alimentacao/M%C3%B3dulo%201/Anexos%20para%20consulta/safra%20frutas%20e%20legumes.pdf" target="_blank" ><button class="buttonJ" ><b>Mais detalhes</b></button></a>
+      </h5>
+      <h5 style="float: left;   padding: 0px; ">
+
+  
+   <table>
+  <b class="janeiromarco">JANEIRO À MARÇO</b>
+    <th>Frutas</th>
+    <th>Hortaliças</th>
+  <b class="abriljunho">ABRIL À JUNHO</b>
+    <th>Frutas</th>
+    <th>Hortaliças</th>
+  </tr>
+  <tr>
+    <td>Abacate</td>
+    <td>Abóbora</td>
+    <td>Abacate</td>
+    <td>Abóbora</td>
+  </tr>
+  
+  <tr>
+    <td>Banana-prata</td>
+    <td>Beringela</td>
+    <td>Banana-d'água</td>
+    <td>Agrião</td>
+  </tr>
+  
+  <tr>
+    <td>Caqui</td>
+    <td>Chuchu</td>
+    <td>Banana-maça</td>
+    <td>Mandioca(aipim)</td>
+  </tr>
+  
+  <tr>
+    <td>Figo</td>
+    <td>Couve</td>
+    <td>Coco</td>
+    <td>Batata-doce</td>
+  </tr>
+  
+  <tr>
+    <td>Fruta-do-conde</td>
+    <td>Jiló</td>
+    <td>Fruta-do-conde</td>
+    <td>Jiló</td>
+  </tr>
+  
+  <tr>
+    <td>Limão</td>
+    <td>Jiló</td>
+    <td>Goiaba</td>
+    <td>Brócolis</td>
+  </tr>
+  
+  <tr>
+    <td>Maça</td>
+    <td>Milho</td>
+    <td>Limão</td>
+    <td>Chicória</td>
+  </tr>
+  
+  <tr>
+    <td>Manga</td>
+    <td>Pepino</td>
+    <td>Laranja-lima</td>
+    <td>Inhame</td>
+  </tr>
+  
+  <tr>
+    <td>Maracujá</td>
+    <td>Quiabo</td>
+    <td>Laranja-baía</td>
+    <td>Milho</td>
+  </tr>
+  
+  <tr>
+    <td>Melância</td>
+    <td>        </td>
+    <td>Laranja-seleta</td>
+    <td>Nabo</td>
+  </tr>
+  
+  <tr>
+    <td>Melão</td>
+    <td>        </td>
+    <td>Maça</td>
+    <td>        </td>
+  </tr>
+  
+  <tr>
+    <td>Pêra</td>
+    <td>        </td>
+    <td>Maracujá</td>
+    <td>        </td>
+  </tr>
+  
+  <tr>
+    <td>Uva</td>
+    <td>        </td>
+    <td>Tangerina</td>
+    <td>        </td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+<table>
+  <b class="julhosetembro">JULHO À SETEMBRO</b>
+    <th>Frutas</th>
+    <th>Hortaliças</th>
+  <b class="outubrodezembro">OUTUBRO À DEZEMBRO</b>
+    <th>Frutas</th>
+    <th>Hortaliças</th>
+  </tr>
+  <tr>
+    <td>Abacate</td>
+    <td>Abóbora</td>
+    <td>Banana-prata</td>
+    <td>Abobrinha</td>
+  </tr>
+  
+  <tr>
+    <td>Banana-prata</td>
+    <td>Abobrinha</td>
+    <td>Banana-prata</td>
+    <td>Agrião</td>
+  </tr>
+  
+  <tr>
+    <td>Banana-maçã</td>
+    <td>Agrião</td>
+    <td>Goiaba</td>
+    <td>Alface</td>
+  </tr>
+  
+  <tr>
+    <td>Banana-d'água</td>
+    <td>Mandioca(aipim)</td>
+    <td>Laranja-natal</td>
+    <td>Batata</td>
+  </tr>
+  
+  <tr>
+    <td>Goiaba</td>
+    <td>Alface</td>
+    <td>Laranja-pêra</td>
+    <td>Bertalha</td>
+  </tr>
+  
+  <tr>
+    <td>Jaboticaba</td>
+    <td>Batata-baroa</td>
+    <td>Manga</td>
+    <td>Brócolis</td>
+  </tr>
+  
+  <tr>
+    <td>Laranja-lima</td>
+    <td>Beterraba</td>
+    <td>Mamão</td>
+    <td>Cenoura</td>
+  </tr>
+  
+  <tr>
+    <td>Melão</td>
+    <td>Brócolis</td>
+    <td>Melância</td>
+    <td>Couve</td>
+  </tr>
+  
+  <tr>
+    <td>Melância</td>
+    <td>Cenoura</td>
+    <td>Melão</td>
+    <td>Espinafre</td>
+  </tr>
+  
+  <tr>
+    <td>Morango</td>
+    <td>Chicória</td>
+    <td>Uva</td>
+    <td>Inhame</td>
+  </tr>
+  
+  <tr>
+    <td>Tangerina</td>
+    <td>Chuchu</td>
+    <td>      </td>
+    <td>Pepino</td>
+  </tr>
+  
+  <tr>
+    <td>       </td>
+    <td>Couve</td>
+    <td>      </td>
+    <td>Quiabo</td>
+  </tr>
+  
+  <tr>
+    <td>       </td>
+    <td>Couve-flor</td>
+    <td>       </td>
+    <td>Vagem</td>
+  </tr>
+
+  <tr>
+    <td>       </td>
+    <td>Espinafre</td>
+    <td>       </td>
+    <td>       </td>
+  </tr>
+
+  <tr>
+    <td>       </td>
+    <td>Mostarda</td>
+    <td>       </td>
+    <td>       </td>
+  </tr>
+  
+</table>
+   
+    <!--lçkaskdjnkansdsakdn--><!--lçkaskdjnkansdsakdn-->
+    <!--lçkaskdjnkansdsakdn--><!--lçkaskdjnkansdsakdn-->
+    <!--lçkaskdjnkansdsakdn--><!--lçkaskdjnkansdsakdn-->
+        
+     
+                  </h5>
+
+      <p class="w3-text-grey">
+        
+
+      </p>
+
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"><img style="float:right;padding-top: 50px;padding-right: 150px;" src="dicas-comprarprodutor.jpeg"  >
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Compre direto do produtor</h1>
+      <h5 class="w3-padding-32">
+        Comprando seu alimento nas feiras, direto do produtor, além de conhecer a pessoa que cultivou o seu alimento, 
+        você também ajuda o produtor a ter uma renda melhor, pois a venda é direta e você também economiza.<br>
+      </h5>
+
+      <p class="w3-text-grey">
+
+       </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Alimente-se bem todos os dias e viva melhor</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Produzido por <a target="_blank">OMAMÃO</a></p>
+</footer>
+
+
+
+</body>
+</html>
